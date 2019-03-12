@@ -10,3 +10,15 @@ C:\Users\Sande\source\repos\Calculator\Calculator\obj\Debug\Calculator.vbproj.Co
 C:\Users\Sande\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\Sande\source\repos\Calculator\Calculator\obj\Debug\Calculator.xml
 C:\Users\Sande\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Sande\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Sande\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Sande\Desktop\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Sande\Desktop\Calculator\Calculator\bin\Debug\Calculator.xml
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.vbprojAssemblyReference.cache
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.Resources.resources
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.cache
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.vbproj.CoreCompileInputs.cache
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.xml
+C:\Users\Sande\Desktop\Calculator\Calculator\obj\Debug\Calculator.pdb
