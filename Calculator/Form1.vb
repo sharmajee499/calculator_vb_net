@@ -33,15 +33,17 @@ Public Class Form1
 
         'to make the less code the operator buttons click event is same
         Dim btn_operator As Object = sender
-        first_value = CDbl(txtbox_input.Text)
-        txtbox_input.Clear()
-        Oper = btn_operator.text
 
-
-
-
+        If txtbox_input.Text = "" Then
+            lbl_output.Text = "Input in valid way"
+        Else
+            first_value = CDbl(txtbox_input.Text)
+            txtbox_input.Clear()
+            Oper = btn_operator.text
+        End If
 
     End Sub
+
 
     Private Sub btn_equal_Click(sender As Object, e As EventArgs) Handles btn_equal.Click
 
@@ -62,15 +64,25 @@ Public Class Form1
 
         End If
 
-
-
-
-
-
-
     End Sub
 
     Private Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click
         txtbox_input.Clear()
+    End Sub
+
+    Private Sub btn_percentage_Click(sender As Object, e As EventArgs) Handles btn_percentage.Click
+        txtbox_input.Text = (CDbl(txtbox_input.Text) / 100)
+    End Sub
+
+    Private Sub btn_plus_minus_Click(sender As Object, e As EventArgs) Handles btn_plus_minus.Click
+        If txtbox_input.Text.Contains("-") Then
+            Dim x As Boolean
+            x = True
+        Else
+            Dim str2 As String
+            str2 = txtbox_input.Text.Insert(0, "-")
+            txtbox_input.Text = str2
+        End If
+
     End Sub
 End Class
