@@ -9,6 +9,8 @@ Public Class Form1
         'to make the less code the click event for all the numeric button is same
         Dim btn As Button = sender
         txtbox_input.Text += btn.Text
+
+        lbl_output.Text += btn.Text
     End Sub
 
     Private Sub btn_back_space_Click(sender As Object, e As EventArgs) Handles btn_back_space.Click
@@ -16,17 +18,21 @@ Public Class Form1
         Dim str As String = txtbox_input.Text
         If txtbox_input.Text <> "" Then
             txtbox_input.Text = str.Remove(str.Length - 1, 1)
+            lbl_output.Text = lbl_output.Text.Remove(lbl_output.Text.Length - 1, 1)
         Else
             txtbox_input.Text = ""
         End If
     End Sub
 
     Private Sub btn_point_Click(sender As Object, e As EventArgs) Handles btn_point.Click
+
         If txtbox_input.Text.Contains(".") Then
             txtbox_input.Text += ""
         Else
             txtbox_input.Text += "."
+            lbl_output.Text = lbl_output.Text & "."
         End If
+
     End Sub
 
     Private Sub btn_plus_Click(sender As Object, e As EventArgs) Handles btn_plus.Click, btn_multiply.Click, btn_minus.Click, btn_divide.Click
@@ -35,11 +41,13 @@ Public Class Form1
         Dim btn_operator As Object = sender
 
         If txtbox_input.Text = "" Then
-            lbl_output.Text = "Input in valid way"
+            txtbox_input.Text += ""
+            'lbl_output.Text = "Input in valid way"
         Else
             first_value = CDbl(txtbox_input.Text)
             txtbox_input.Clear()
             Oper = btn_operator.text
+            lbl_output.Text += " " & Oper & " "
         End If
 
     End Sub
@@ -63,15 +71,17 @@ Public Class Form1
             End If
 
         End If
-
+        lbl_output.Text = txtbox_input.Text
     End Sub
 
     Private Sub btn_clear_Click(sender As Object, e As EventArgs) Handles btn_clear.Click
         txtbox_input.Clear()
+        lbl_output.Text = ""
     End Sub
 
     Private Sub btn_percentage_Click(sender As Object, e As EventArgs) Handles btn_percentage.Click
         txtbox_input.Text = (CDbl(txtbox_input.Text) / 100)
+        lbl_output.Text = txtbox_input.Text & " %"
     End Sub
 
     Private Sub btn_plus_minus_Click(sender As Object, e As EventArgs) Handles btn_plus_minus.Click
@@ -82,6 +92,7 @@ Public Class Form1
             Dim str2 As String
             str2 = txtbox_input.Text.Insert(0, "-")
             txtbox_input.Text = str2
+            lbl_output.Text = lbl_output.Text.Insert(0, "-")
         End If
 
     End Sub

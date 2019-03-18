@@ -72,9 +72,8 @@ Partial Class Form1
         Me.lbl_output.AutoSize = True
         Me.lbl_output.Location = New System.Drawing.Point(24, 9)
         Me.lbl_output.Name = "lbl_output"
-        Me.lbl_output.Size = New System.Drawing.Size(42, 15)
+        Me.lbl_output.Size = New System.Drawing.Size(0, 15)
         Me.lbl_output.TabIndex = 2
-        Me.lbl_output.Text = "Label2"
         '
         'btn1
         '
